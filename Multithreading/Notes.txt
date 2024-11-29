@@ -1,0 +1,5 @@
+Multithreading - Execution of more than one thread at a time
+
+Thread - A thread is a piece of code that executes independently.
+
+Thread default priority number is 5.

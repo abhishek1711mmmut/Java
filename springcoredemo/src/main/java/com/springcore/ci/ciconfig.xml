@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="https://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xmlns:c="http://www.springframework.org/schema/c"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  https://www.springframework.org/schema/context
+  https://www.springframework.org/schema/context/spring-context.xsd">
+  	<!-- <bean class="com.springcore.ci.Certi" name="cer">
+  		<constructor-arg value="Programming using JAVA"/>
+  	</bean> -->
+  	<bean class="com.springcore.ci.Certi" name="cer" c:name="Programming using C--"/>
+	<bean class="com.springcore.ci.Person" name="person">
+		<constructor-arg value="101" type="int"/>
+		<constructor-arg value="Abhishek"/>
+		<constructor-arg ref="cer"/>
+	</bean>
+	<!-- <bean class="com.springcore.ci.Person" name="person" c:name="Abhishek" c:personId="101" c:certi-ref="cer"/> -->
+	
+	<bean class="com.springcore.ci.Addition" name="add1">
+		<constructor-arg value="23" type="int" index="1"/>
+		<constructor-arg value="17" type="int" index="0"/>
+	</bean>
+</beans>
